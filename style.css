@@ -1,0 +1,84 @@
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+  .container{
+        width: 100%;
+        height: 100vh;
+        background: url(flower.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    
+    }
+  .gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+
+  .img-box{
+    width: 50px;
+    height: 300px;
+    margin: -10px;
+    border-radius: 200px;
+    background: url(dress-1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+  }
+
+  .img-box:nth-child(2){
+    background: url(dress2.png);
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .img-box:nth-child(3){
+    background: url(dress-3.png);
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .img-box:nth-child(4){
+    background: url(dress4.png);
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .img-box h3{
+    color:#eb3c76;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+
+  }
+
+  .img-box:hover{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+  }
+  
+  .img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+  }
+
+
+
+
+
+
+
+  
